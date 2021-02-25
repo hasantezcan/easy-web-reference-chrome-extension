@@ -7,10 +7,7 @@ let contextMenuItem = {
 chrome.contextMenus.create(contextMenuItem);
 
 chrome.contextMenus.onClicked.addListener((clickData, tab) => {
-	const refLink = `${tab.url.toString()}#:~:text=${clickData.selectionText}`;
-	console.log("SELECTED WORD:", clickData.selectionText);
-	console.log("REF URL:", refLink);
-
+	const refLink = createRefLink(tab.url, clickData.selectionText);
 	copyTextToClipboard(refLink);
 	alert(`You mentioned this section: "${clickData.selectionText}"
 	The referenced URL copied your clipboard!`);
@@ -41,3 +38,12 @@ function copyTextToClipboard(text) {
 	//other elements can get access to this.
 	document.body.removeChild(copyFrom);
 }
+
+const createRefLink = (url, mention) => {
+	// console.log("SELECTED WORD:", mention);
+	// console.log("REF URL:", url);
+	const regex = /^.*(?=(\#:~:text))/gim;
+	url = url.match(regex) ? url.match(regex)[0] : url;
+	return `${url}#:~:text=${mention}`;
+};
+
