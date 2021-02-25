@@ -7,9 +7,9 @@ let contextMenuItem = {
 chrome.contextMenus.create(contextMenuItem);
 
 chrome.contextMenus.onClicked.addListener((clickData, tab) => {
-	console.log(clickData.selectionText);
 	const refLink = `${tab.url.toString()}#:~:text=${clickData.selectionText}`;
-	console.log("SELECTED WORD", refLink);
+	console.log("SELECTED WORD:", clickData.selectionText);
+	console.log("REF URL:", refLink);
 
 	copyTextToClipboard(refLink);
 	alert(`You mentioned this section: "${clickData.selectionText}"
