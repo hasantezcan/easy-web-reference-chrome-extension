@@ -3,23 +3,23 @@
 	"name": "Easy Web Referance",
 	"version": "0.1",
 	"icons": {
-		"128": "icon-128.ico",
-		"64": "icon-64.ico",
-		"16": "icon-16.ico"
+		"128": "./src/assets/images/icon-128.ico",
+		"64": "./src/assets/images/icon-64.ico",
+		"16": "./src/assets/images/icon-16.ico"
 	},
 	"content_scripts": [
 		{
 			"matches": ["<all_urls>"],
-			"js": ["content.js"]
+			"js": ["./src/content.js"]
 		}
 	],
 	"background": {
-		"scripts": ["background.js"],
+		"scripts": ["./src/background.js"],
 		"presistent": false
 	},
 	"browser_action": {
-		"default_icon": "web-ref.png",
-		"default_popup": "index.html",
+		"default_icon": "./src/assets/images/web-ref.png",
+		"default_popup": "./src/index.html",
 		"default_title": "Easy Web Referance"
 	},
 	"permissions": ["contextMenus", "notifications", "clipboardWrite"]
