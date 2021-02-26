@@ -9,11 +9,10 @@ chrome.contextMenus.create(contextMenuItem);
 chrome.contextMenus.onClicked.addListener((clickData, tab) => {
 	const refLink = createRefLink(tab.url, clickData.selectionText);
 	copyTextToClipboard(refLink);
-	alert(`You mentioned this section: "${clickData.selectionText}"
-	The referenced URL copied your clipboard!`);
+	sendNotification(clickData.selectionText);
 });
 
-function copyTextToClipboard(text) {
+const copyTextToClipboard = (text) => {
 	//Create a textbox field where we can insert text to.
 	var copyFrom = document.createElement("textarea");
 
@@ -37,7 +36,7 @@ function copyTextToClipboard(text) {
 	//Remove the textbox field from the document.body, so no other JavaScript nor
 	//other elements can get access to this.
 	document.body.removeChild(copyFrom);
-}
+};
 
 const createRefLink = (url, mention) => {
 	// console.log("SELECTED WORD:", mention);
@@ -47,3 +46,13 @@ const createRefLink = (url, mention) => {
 	return `${url}#:~:text=${mention}`;
 };
 
+const sendNotification = (mention) => {
+	console.log("notification is working");
+	chrome.notifications.create({
+		title: "The referenced URL copied your clipboard!",
+		message: `You mentioned this section: "${mention}"`,
+		iconUrl:
+			"https://raw.githubusercontent.com/hasantezcan/easy-web-referance-chrome-extension/main/src/assets/images/web-ref.png?token=AH2I5GOABPY7LXW2OPIPQZ3AIKOPY",
+		type: "basic",
+	});
+};
