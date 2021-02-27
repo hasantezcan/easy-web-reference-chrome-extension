@@ -1,4 +1,4 @@
-# Notes 
+# Dev Notes 
 **TEST PAGE** = https://en.wikipedia.org/wiki/Grey_currawong
 
 ## Regex 
@@ -74,3 +74,14 @@ The error is I cant show the app icon in notification box. The chrome cant read 
 > **You have to accept manifest.json like referance while setting the image.** 
 
 [**`-> related commit`**](https://github.com/hasantezcan/easy-web-referance-chrome-extension/commit/6c0608b644fc8c8e8c8eec0f786dcdb9c8e1b95f#diff-16f022ec89282b37542e3374910a5e4a4cf37596abf8f723f0d7f8ab1096f853L54-R53) 
+
+
+## How to deploy and publish chrome extension
+
+- [Heptagon Perspectives](https://medium.com/heptagon/how-to-deploy-and-publish-your-chrome-extension-cbb533abf550) - Mar 2019
+
+## Readme reference
+
+- [Headless Recorder](https://github.com/checkly/headless-recorder) 
+- https://github.com/darkreader/darkreader
+- https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
