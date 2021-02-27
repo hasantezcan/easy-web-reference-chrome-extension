@@ -47,12 +47,10 @@ const createRefLink = (url, mention) => {
 };
 
 const sendNotification = (mention) => {
-	console.log("notification is working");
 	chrome.notifications.create({
 		title: "The referenced URL copied your clipboard!",
 		message: `You mentioned this section: "${mention}"`,
-		iconUrl:
-			"https://raw.githubusercontent.com/hasantezcan/easy-web-referance-chrome-extension/main/src/assets/images/web-ref.png?token=AH2I5GOABPY7LXW2OPIPQZ3AIKOPY",
+		iconUrl: "/src/assets/images/web-ref.png",
 		type: "basic",
 	});
 };
