@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Easy Web Reference",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"icons": {
 		"128": "./src/assets/images/icon-128.ico",
 		"64": "./src/assets/images/icon-64.ico",
