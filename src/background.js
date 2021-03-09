@@ -43,7 +43,8 @@ const createRefLink = (url, mention) => {
 	// console.log("REF URL:", url);
 	const regex = /^.*(?=(\#:~:text))/gim;
 	url = url.match(regex) ? url.match(regex)[0] : url;
-	return `${url}#:~:text=${mention}`;
+	const refLink = `${url}#:~:text=${mention}`;
+	return refLink.split(" ").join("%20");
 };
 
 const sendNotification = (mention) => {
@@ -54,3 +55,4 @@ const sendNotification = (mention) => {
 		type: "basic",
 	});
 };
+
