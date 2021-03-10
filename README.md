@@ -1,6 +1,6 @@
 <p align="center">
   <img width="200px" src="./src/assets/images/web-ref.png" />
-  <h1 align="center">Easy Web Referance</h1>
+  <h1 align="center">Easy Web Reference</h1>
   <br/>
   <p align="center">
   <!-- <img src="https://github.com/checkly/headless-recorder/workflows/Lint%20&%20Build%20&%20Test/badge.svg?branch=master" alt="Github Build"/> -->
@@ -11,7 +11,7 @@
     <img alt="Chrome Web Store" src="https://img.shields.io/chrome-web-store/stars/nogppkedjlemlmklibidcopeiegepngk?label=Rating">
   </a>
   
-  <img alt="GitHub" src="https://img.shields.io/github/license/hasantezcan/easy-web-reference-chrome-extension?label=License">
+  <img alt="GitHub" src="https://img.shields.io/github/license/hasantezcan/easy-web-reference-chrome-extension">
 
   </p>
 </p>
@@ -24,15 +24,33 @@
 	<em style="color: grey">Easy Web Referance Preview</em>
 </p> 
 
-## Details
+## Usage
 
-This extension just use [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/#syntax) feature.
+1. Select the text that you want to mention.
+2. And right click with your mouse
+3. Click the **"Copy the web reference link"** 
+4. You will see the desktop alert message
+5. Now you can free to share your reference link whoever you want 
 
-Thanks to my friend [Yaşar](https://twitter.com/yasarcelepp) for notifying me of this usage.
+
+## Download Links
+- [Chorme Web Store](https://chrome.google.com/webstore/detail/easy-web-reference/nogppkedjlemlmklibidcopeiegepngk?hl=en)
+- Firefox (soon)
+## How it works
+
+This extension just use [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/#syntax) features.
+
+> https://github.com/WICG/scroll-to-text-fragment
+
+
+## Thanks 
+
+Thanks to my friend [Yaşar](https://twitter.com/yasarcelepp) for notifying me about this feature ([Text Fragments](https://wicg.github.io/scroll-to-text-fragment/#syntax)).
 
 ## Dev Notes
 [You can find here..](./chrome-web-store/notes.md)
 
+> Landing page [repo](https://github.com/hasantezcan/easy-web-referance-landing-page)
 ---
 > **If you see any mistakes or if you want to make any improvement on this repo you can** [**`pull the request here.`**](https://github.com/hasantezcan/easy-web-reference-chrome-extension/pulls) 
 
