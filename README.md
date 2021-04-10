@@ -34,7 +34,7 @@
 
 
 ## Download Links
-- [Chorme Web Store](https://chrome.google.com/webstore/detail/easy-web-reference/nogppkedjlemlmklibidcopeiegepngk?hl=en)
+- [Chrome Web Store](https://chrome.google.com/webstore/detail/easy-web-reference/nogppkedjlemlmklibidcopeiegepngk?hl=en)
 - Firefox (soon)
 ## How it works
 
